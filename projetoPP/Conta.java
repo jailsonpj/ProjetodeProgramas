@@ -1,12 +1,13 @@
 package projeto;
-
-public class Conta {
+//classe conta 
+public class Conta { 
+	//atributos
 	private String tipoConta;
 	private float valorConta;
 	private int codigoConta;
 	private String vencimentoConta;
 	
-	public Conta(){
+	public Conta(){ //método construtor
 		
 	}
 	
