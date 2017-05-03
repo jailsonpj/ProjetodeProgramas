@@ -1,4 +1,3 @@
-package br.com.projeto.pp;
 import javax.swing.*;
 
 public class Principal {
@@ -19,23 +18,24 @@ public class Principal {
                             "[2] Adicionar conta\n" +
                             "[3] Listar contas a pagar\n" +
                             "[4] Contas do mês\n" +
-                            "[5] fim\n");
+                            "[5] Encerrar\n");
 
-            if (option.charAt(0) == 1) {
-
-            }
-            if (option.charAt(0) == 2) {
+            if (option.charAt(0) == '1') {
 
             }
-            if (option.charAt(0) == 3) {
+            if (option.charAt(0) == '2') {
 
             }
-            if (option.charAt(0) == 4) {
+            if (option.charAt(0) == '3') {
+
+            }
+            if (option.charAt(0) == '4') {
 
             }
 
-        } while(option.charAt(0) != 5);
+        } while(option.charAt(0) != '5');
 
+        JOptionPane.showMessageDialog(null, "Até logo!");
         System.exit(0);
 
     }
