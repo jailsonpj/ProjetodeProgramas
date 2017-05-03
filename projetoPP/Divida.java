@@ -1,9 +1,12 @@
 package projeto;
 
 import java.util.ArrayList;
+
+//classe divida
 public class Divida {
-	private int mesVencimento;
-	private ArrayList<Conta>conta ;
+	//atributos
+	private int mesVencimento; //mes vencimento das dividas 
+	private ArrayList<Conta>conta ; //array de Conta,recebe mais de uma conta 
 	
 	public Divida (){
 		//this.mesVencimento = mesVencimento;
@@ -28,7 +31,7 @@ public class Divida {
 		this.conta = conta;
 	}
 	
-	public void addConta(Conta cont){
+	public void addConta(Conta cont){ //método que adiciona uma conta ao array de conta 
 		conta.add(cont);
 	}
 	
