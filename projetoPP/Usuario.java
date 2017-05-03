@@ -1,6 +1,8 @@
 package projeto;
 
+//classe usuário
 public class Usuario {
+	//atributos
 	private String nome;
 	private int idade;
 	private float salario;
