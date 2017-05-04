@@ -1,7 +1,9 @@
-import javax.swing.*;
+package financeiro;
+
 import java.util.ArrayList;
+
+//import javax.swing.JOptionPane;
 public class Divida {
-	private int id;
 	private int mesVencimento;
 	private ArrayList<Conta>conta ;
 	
@@ -10,13 +12,7 @@ public class Divida {
 		conta = new ArrayList<Conta>();
 	}
 
-	public int getId() {
-		return id;
-	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public int getMesVencimento() {
 		return mesVencimento;
@@ -37,6 +33,11 @@ public class Divida {
 	public void addConta(Conta cont){
 		conta.add(cont);
 	}
-
+	
+	/*public void cadastraDivida(Conta conta){
+		this.mesVencimento = Integer.parseInt(JOptionPane.showInputDialog(null,"mes da divida referente as contas"));
+		addConta(conta);
+		
+	}*/
 	
 }

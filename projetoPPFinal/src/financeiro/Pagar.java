@@ -1,14 +1,14 @@
-import java.util.ArrayList;
+package financeiro;
+
+
+import usuario.Usuario;
 
 public class Pagar {
 	private Usuario user;
-	private ArrayList<Divida> divida;
+	private Divida divida;
 	private int totalDivida;
 	
-	public Pagar() {
-		divida = new ArrayList<Divida>();
-	}
-
+	
 	public int getTotalDivida() {
 		return totalDivida;
 	}
@@ -25,16 +25,15 @@ public class Pagar {
 		this.user = user;
 	}
 
-	public ArrayList<Divida> getDivida() {
+	public Divida getDivida() {
 		return divida;
 	}
 
-	public void setDivida(ArrayList<Divida> divida) {
+	public void setDivida(Divida divida) {
 		this.divida = divida;
 	}
-
-	public void addDivida(Divida div){
-		divida.add(div);
-	}
-
+	
+	
+	
+	
 }

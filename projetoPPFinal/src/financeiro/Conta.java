@@ -1,6 +1,10 @@
+package financeiro;
+
+import javax.swing.JOptionPane;
+
 public class Conta {
 	private String tipoConta;
-	private double valorConta;
+	private float valorConta;
 	private int codigoConta;
 	private String vencimentoConta;
 	
@@ -16,11 +20,11 @@ public class Conta {
 		return tipoConta;
 	}
 
-	public double getValorConta() {
+	public float getValorConta() {
 		return valorConta;
 	}
 
-	public void setValorConta(double valorConta) {
+	public void setValorConta(float valorConta) {
 		this.valorConta = valorConta;
 	}
 
@@ -39,6 +43,11 @@ public class Conta {
 	public void setVencimentoConta(String vencimentoConta) {
 		this.vencimentoConta = vencimentoConta;
 	}
-	
+	 public void cadastraConta(){
+		 this.codigoConta = Integer.parseInt(JOptionPane.showInputDialog(null,"Codigo da conta"));
+		 this.tipoConta = JOptionPane.showInputDialog(null,"Informe o tipo da conta");
+		 this.valorConta = Float.parseFloat(JOptionPane.showInputDialog(null,"Valor da conta"));
+		 this.vencimentoConta = JOptionPane.showInputDialog(null,"Data vencimento da conta (XX/XX/XXXX)");
+	 }
 	
 }
