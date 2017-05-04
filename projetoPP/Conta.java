@@ -1,13 +1,14 @@
 package projeto;
-//classe conta 
-public class Conta { 
-	//atributos
+
+import javax.swing.JOptionPane;
+
+public class Conta {
 	private String tipoConta;
 	private float valorConta;
 	private int codigoConta;
 	private String vencimentoConta;
 	
-	public Conta(){ //método construtor
+	public Conta(){
 		
 	}
 	
@@ -42,6 +43,11 @@ public class Conta {
 	public void setVencimentoConta(String vencimentoConta) {
 		this.vencimentoConta = vencimentoConta;
 	}
-	
+	 public void cadastraConta(){
+		 this.codigoConta = Integer.parseInt(JOptionPane.showInputDialog(null,"Codigo da conta"));
+		 this.tipoConta = JOptionPane.showInputDialog(null,"Informe o tipo da conta");
+		 this.valorConta = Float.parseFloat(JOptionPane.showInputDialog(null,"Valor da conta"));
+		 this.vencimentoConta = JOptionPane.showInputDialog(null,"Data vencimento da conta (XX/XX/XXXX)");
+	 }
 	
 }

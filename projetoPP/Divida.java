@@ -2,11 +2,10 @@ package projeto;
 
 import java.util.ArrayList;
 
-//classe divida
+//import javax.swing.JOptionPane;
 public class Divida {
-	//atributos
-	private int mesVencimento; //mes vencimento das dividas 
-	private ArrayList<Conta>conta ; //array de Conta,recebe mais de uma conta 
+	private int mesVencimento;
+	private ArrayList<Conta>conta ;
 	
 	public Divida (){
 		//this.mesVencimento = mesVencimento;
@@ -31,8 +30,14 @@ public class Divida {
 		this.conta = conta;
 	}
 	
-	public void addConta(Conta cont){ //método que adiciona uma conta ao array de conta 
+	public void addConta(Conta cont){
 		conta.add(cont);
 	}
+	
+	/*public void cadastraDivida(Conta conta){
+		this.mesVencimento = Integer.parseInt(JOptionPane.showInputDialog(null,"mes da divida referente as contas"));
+		addConta(conta);
+		
+	}*/
 	
 }

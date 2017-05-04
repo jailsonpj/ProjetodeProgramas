@@ -1,9 +1,9 @@
 package projeto;
-//classe que faz a associação entre usuário e dividas 
+
 public class Pagar {
-	private Usuario user; //atributo do tipo Usuario
-	private Divida divida; //atributo do tipo Divida
-	private int totalDivida; //variavel para contar o total de dividas a pagar 
+	private Usuario user;
+	private Divida divida;
+	private int totalDivida;
 	
 	
 	public int getTotalDivida() {
@@ -26,9 +26,11 @@ public class Pagar {
 		return divida;
 	}
 
-	/*public void setDivida(Divida divida) {
+	public void setDivida(Divida divida) {
 		this.divida = divida;
-	}*/
+	}
+	
+	
 	
 	
 }

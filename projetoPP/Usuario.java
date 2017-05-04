@@ -1,11 +1,10 @@
 package projeto;
 
-//classe usuário
+import javax.swing.*;
 public class Usuario {
-	//atributos
 	private String nome;
 	private int idade;
-	private float salario;
+	private double salario;
 	
 	public Usuario(){
 		
@@ -27,12 +26,21 @@ public class Usuario {
 		this.idade = idade;
 	}
 
-	public float getSalario() {
+	public double getSalario() {
 		return salario;
 	}
 
-	public void setSalario(float salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
+	}
+	
+	public void cadastraUser(){
+		
+		this.nome=(JOptionPane.showInputDialog(null,"Seu nome."));
+		this.idade = (Integer.parseInt(JOptionPane.showInputDialog(null,"Sua idade")));
+		this.salario = (Double.parseDouble(JOptionPane.showInputDialog(null,"Seu salario")));
+		
+		
 	}
 	
 	
