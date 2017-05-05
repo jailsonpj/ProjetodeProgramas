@@ -1,4 +1,4 @@
-package financeiro;
+package projeto;
 
 import java.util.ArrayList;
 
@@ -11,8 +11,6 @@ public class Divida {
 		//this.mesVencimento = mesVencimento;
 		conta = new ArrayList<Conta>();
 	}
-
-
 
 	public int getMesVencimento() {
 		return mesVencimento;

@@ -1,4 +1,4 @@
-package usuario;
+package projeto;
 
 import javax.swing.*;
 public class Usuario {

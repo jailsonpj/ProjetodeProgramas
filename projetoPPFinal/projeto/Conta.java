@@ -1,4 +1,4 @@
-package financeiro;
+package projeto;
 
 import javax.swing.JOptionPane;
 
@@ -48,6 +48,12 @@ public class Conta {
 		 this.tipoConta = JOptionPane.showInputDialog(null,"Informe o tipo da conta");
 		 this.valorConta = Float.parseFloat(JOptionPane.showInputDialog(null,"Valor da conta"));
 		 this.vencimentoConta = JOptionPane.showInputDialog(null,"Data vencimento da conta (XX/XX/XXXX)");
+	 }
+	 
+	 public String mostraConta(){
+		 String mostra = "";
+		return  mostra += "Código: "+this.codigoConta+ "\n" + "Tipo da Conta: "+this.tipoConta + "\n" + "Valor da Conta: " +this.valorConta+ "\n" + "Data Vencimento: " +this.vencimentoConta+ "\n\n";
+		//JOptionPane.showMessageDialog(null, mostra);
 	 }
 	
 }
