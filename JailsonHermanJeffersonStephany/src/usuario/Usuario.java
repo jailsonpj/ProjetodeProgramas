@@ -41,4 +41,10 @@ public class Usuario {
         this.idade = (Integer.parseInt(JOptionPane.showInputDialog(null, "Sua idade")));
         this.salario = (Double.parseDouble(JOptionPane.showInputDialog(null, "Seu salario")));
     }
+
+
+    public String mostraUsuario() {
+        String mostra = "";
+        return mostra += this.getNome() + "\n\n";
+    }
 }
