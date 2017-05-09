@@ -161,7 +161,6 @@ public class Principal {
                                         System.out.println("removido");
                                     }
                                 }
-                                break;
                             }
                         }
 
