@@ -1,9 +1,5 @@
 package projeto;
-
 import java.util.ArrayList;
-
-//import javax.swing.JOptionPane;
-
 public class Pagar {
 	private Usuario user;
 	private ArrayList<Divida>divida;
