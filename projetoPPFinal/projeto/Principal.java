@@ -117,20 +117,19 @@ public class Principal {
 						}
 						JOptionPane.showMessageDialog(null,mostra);								
 					}
-					//JOptionPane.showMessageDialog(null, mostra);
+					
 				}
-				//JOptionPane.showMessageDialog(null,mostra);
+				
 			}
 				
 			
 			if(option.charAt(0) == '5'){
-				//double totalDividas  = 0;
+				
 				float aux = 0;
 				int cont = 0 ;
 				String userMostra = JOptionPane.showInputDialog(null,"Nome do usuário?");
 				for(int i=0;i<instancia.size();i++){
 					if(userMostra.equals(instancia.get(i).getUser().getNome())){
-						//int auxCont = i;
 						int mesDivida = Integer.parseInt(JOptionPane.showInputDialog(null,"Calcular total de contas do mês "+"\n"+instancia.get(i).mostraDivida()));
 						for(int j=0;j<instancia.get(i).getDivida().size();j++){	
 							if(instancia.get(i).getDivida().get(j).getMesVencimento() == mesDivida){
@@ -173,7 +172,7 @@ public class Principal {
 									}
 							}
 						
-						}	//System.out.println("conta cadastrada");
+						}	
 				}
 				
 			}
