@@ -1,14 +1,11 @@
 package projeto;
 
 import java.util.ArrayList;
-
-//import javax.swing.JOptionPane;
 public class Divida {
 	private int mesVencimento;
 	private ArrayList<Conta>conta ;
 	
 	public Divida (){
-		//this.mesVencimento = mesVencimento;
 		conta = new ArrayList<Conta>();
 	}
 
