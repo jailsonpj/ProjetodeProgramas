@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Pagar {
 	private Usuario user;
 	private ArrayList<Divida>divida;
-	//private int totalDivida;
+	
 	
 	public Pagar(){
 		divida = new ArrayList<Divida>();
@@ -25,12 +25,6 @@ public class Pagar {
 	public void setDivida(ArrayList<Divida> divida) {
 		this.divida = divida;
 	}
-	/*public int getTotalDivida() {
-		return totalDivida;
-	}
-	public void setTotalDivida(int totalDivida) {
-		this.totalDivida = totalDivida;
-	}*/
 	
 	public void addDivida(Divida div){
 		divida.add(div);
