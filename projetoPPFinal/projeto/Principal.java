@@ -81,8 +81,8 @@ public class Principal {
 				for(int i=0;i<instancia.size();i++){
 					
 					if(nomeUser.equals(instancia.get(i).getUser().getNome())){
-						
-						int mesDiv = Integer.parseInt(JOptionPane.showInputDialog(null,"Em que mês voce quer adicionar uma conta"));
+						//instancia.get(i).mostraDivida();
+						int mesDiv = Integer.parseInt(JOptionPane.showInputDialog(null,"Em que mês voce quer adicionar uma conta" + "\n" +"Mês :"+"\n"+ instancia.get(i).mostraDivida()));
 						
 						for(int j=0;j<instancia.get(i).getDivida().size();j++){
 							
@@ -106,7 +106,7 @@ public class Principal {
 				for(int i=0;i<instancia.size();i++){
 				
 					if(userMostra.equals(instancia.get(i).getUser().getNome())){
-						int mostraConta = Integer.parseInt(JOptionPane.showInputDialog(null,"Mostrar contas de qual mês?"));
+						int mostraConta = Integer.parseInt(JOptionPane.showInputDialog(null,"Mostrar contas de qual mês "+"\n"+"Mês: "+instancia.get(i).mostraDivida()));
 						String mostra ="";
 						for(int j=0;j<instancia.get(i).getDivida().size();j++){
 							if(mostraConta == instancia.get(i).getDivida().get(j).getMesVencimento()){
@@ -124,29 +124,34 @@ public class Principal {
 				
 			
 			if(option.charAt(0) == '5'){
-				/*double totalDividas  = 0;
-				double aux = 0;
+				//double totalDividas  = 0;
+				float aux = 0;
+				int cont = 0 ;
 				String userMostra = JOptionPane.showInputDialog(null,"Nome do usuário?");
 				for(int i=0;i<instancia.size();i++){
 					if(userMostra.equals(instancia.get(i).getUser().getNome())){
-						//int aux = i;
-						int mesDivida = Integer.parseInt(JOptionPane.showInputDialog(null,"informe o mes para calcular o total das contas a pagar"));
-						if(instancia.get(i).getDivida().getMesVencimento() == mesDivida){
-							for(int j=0;j<instancia.get(i).getDivida().getConta().size();j++){
-								totalDividas += instancia.get(i).getDivida().getConta().get(j).getValorConta();
+						//int auxCont = i;
+						int mesDivida = Integer.parseInt(JOptionPane.showInputDialog(null,"Calcular total de contas do mês "+"\n"+instancia.get(i).mostraDivida()));
+						for(int j=0;j<instancia.get(i).getDivida().size();j++){	
+							if(instancia.get(i).getDivida().get(j).getMesVencimento() == mesDivida){
+								for(int k=0;k<instancia.get(i).getDivida().get(j).getConta().size();k++){	
+									aux += instancia.get(i).getDivida().get(j).getConta().get(k).getValorConta() ;
+								}	
 							}
 						}
-						aux = instancia.get(i).getUser().getSalario();
+						cont = i;
 					}
 				}
+		
 				
-				if(totalDividas < aux){
+				if(instancia.get(cont).getUser().getSalario() > aux){
 					JOptionPane.showMessageDialog(null,"Saldo devedor: positivo");
 				}else{
-					JOptionPane.showMessageDialog(null,"Saldo devedor negativo: " + (aux - totalDividas));
+					JOptionPane.showMessageDialog(null,"Saldo devedor negativo: " + (aux - instancia.get(cont).getUser().getSalario()));
 				}
-				JOptionPane.showMessageDialog(null, "Total de contas a pagar: "+totalDividas);
-				*/
+				JOptionPane.showMessageDialog(null, "Total de contas a pagar: "+ aux);
+				
+				System.out.println("totAL" + aux);
 				
 			}
 			if(option.charAt(0) == '6'){
@@ -155,7 +160,7 @@ public class Principal {
 				
 				for(int i=0;i<instancia.size();i++){
 						if(nomeUser.equals(instancia.get(i).getUser().getNome())){	
-							int mes = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o mês da divida da conta a ser removido."));
+							int mes = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o mês da divida da conta a ser removido "+"\n"+"Mês: "+"\n"+instancia.get(i).mostraDivida()));
 							for (int j = 0; j < instancia.get(i).getDivida().size(); j++) {
 									if(mes == instancia.get(i).getDivida().get(j).getMesVencimento()){
 										int cod = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o código da conta a remover"));
