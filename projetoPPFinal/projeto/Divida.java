@@ -32,10 +32,5 @@ public class Divida {
 		conta.add(cont);
 	}
 	
-	/*public void cadastraDivida(Conta conta){
-		this.mesVencimento = Integer.parseInt(JOptionPane.showInputDialog(null,"mes da divida referente as contas"));
-		addConta(conta);
-		
-	}*/
 	
 }
