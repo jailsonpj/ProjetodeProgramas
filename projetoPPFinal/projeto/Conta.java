@@ -53,7 +53,7 @@ public class Conta {
 	 public String mostraConta(){
 		 String mostra = "";
 		return  mostra += "Código: "+this.codigoConta+ "\n" + "Tipo da Conta: "+this.tipoConta + "\n" + "Valor da Conta: " +this.valorConta+ "\n" + "Data Vencimento: " +this.vencimentoConta+ "\n\n";
-		//JOptionPane.showMessageDialog(null, mostra);
+		
 	 }
 	
 }
