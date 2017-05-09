@@ -81,7 +81,6 @@ public class Principal {
 				for(int i=0;i<instancia.size();i++){
 					
 					if(nomeUser.equals(instancia.get(i).getUser().getNome())){
-						//instancia.get(i).mostraDivida();
 						int mesDiv = Integer.parseInt(JOptionPane.showInputDialog(null,"Em que mês voce quer adicionar uma conta" + "\n" +"Mês :"+"\n"+ instancia.get(i).mostraDivida()));
 						
 						for(int j=0;j<instancia.get(i).getDivida().size();j++){
